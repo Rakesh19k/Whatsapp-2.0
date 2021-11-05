@@ -24,6 +24,7 @@ const ChatScreen = ({ chat, messages }) => {
     )
 
     const [messagesSnapshot] = useCollection(db.collection('chats').doc(router.query.id).collection('messages').orderBy('timestamp', 'asc'));
+    
     const showMessage = () => {
         if (messagesSnapshot) {
             return messagesSnapshot.docs.map((message) => (
