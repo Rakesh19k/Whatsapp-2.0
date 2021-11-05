@@ -7,7 +7,6 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollection } from "react-firebase-hooks/firestore"
 import * as EmailValidator from "email-validator";
 import { auth, db } from "../firebase";
-// import firebase from "firebase";
 import Chat from "./Chat";
 
 
